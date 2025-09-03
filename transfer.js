@@ -7,7 +7,7 @@ dotenv.config()
 
 const privateKey = fs.readFileSync('key', 'utf-8')
 const clientId = process.env.CLIENT_ID || ''
-const apiUrl = process.env.BASE_URL_PRODUCTION || ''
+const apiUrl = process.env.BASE_URL_DEVELOPMENT || ''
 const externalId = crypto.randomUUID();
 const clientSecret = process.env.CLIENT_SECRET || ''
 const partnerId = process.env.PARTNER_ID || ''
